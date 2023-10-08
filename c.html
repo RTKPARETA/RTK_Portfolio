@@ -1,0 +1,358 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    padding: 20px;
+  }
+
+  .popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid yellow;
+  }
+
+  .popup-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #008CBA;
+    color: blue;
+    border: none;
+    cursor: pointer;
+  }
+
+  .popup-content button:hover {
+    background-color: #006495;
+  }
+</style>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup-content">
+      <form style="color:black">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="message" name="message" placeholder="Message">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    var popup = document.querySelector('.popup ');
+    var openButton = document.querySelector('.open-button');
+    var closeButton = document.querySelector('.close-button');
+    openButton.addEventListener('click', function () {
+      popup.style.display = 'block';
+    });
+    closeButton.addEventListener('click', function () {
+      popup.style.display = 'none';
+    });
+  </script>
+</body>
+Let's Connect
+
+Thank you for visiting my portfolio. As a fresher/intern passionate about front-end development, I'm eager to connect
+with you and explore opportunities to kickstart my career. Feel free to reach out to me through any of the following
+channels:
+
+Email: [Your Email Address]
+
+LinkedIn: [Your LinkedIn Profile]
+
+Twitter: [Your Twitter Profile]
+
+Instagram: [Your Instagram Profile]
+
+GitHub: [Your GitHub Profile]
+
+Behance: [Your Behance Profile]
+
+Dribbble: [Your Dribbble Profile]
+
+Connect with Me on Social Media
+
+Stay updated with my journey as a budding front-end developer by following me on social media. I'm excited to connect
+with fellow professionals, mentors, and potential employers.
+
+Seeking Opportunities
+
+I am actively seeking work or internship opportunities in front-end development. If you have a role or project that
+aligns with my skills and enthusiasm, I would love to hear from you. Let's discuss how I can contribute to your team or
+project.
+
+Questions or Advice
+
+If you have any questions or advice to share with a fellow newcomer to the industry, please don't hesitate to reach out.
+I'm open to learning and growing, and I greatly appreciate any guidance you can provide.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTK - My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="portfolio.css" rel="stylesheet">
+</head>
+<style>
+    .contact {
+        width: 500px;
+        height: 600px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-color: black;
+    }
+
+    .contact input {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid yellow;
+    }
+
+    .contact button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #008CBA;
+        color: grey;
+        border: none;
+        cursor: pointer;
+    }
+
+    .contact button:hover {
+        background-color: #006495;
+    }
+
+    .sec1 {
+        height: 1100px;
+        width: 1200px;
+        margin-top: 10px;
+
+    }
+
+    .arightsection {
+        height: auto;
+        text-align: justify;
+        width: 600px;
+        margin: 10px 0;
+        margin-left: 70px;
+        float: left;
+        border: 1px solid yellow;
+
+    }
+
+    .aleftsection {
+border: 1px solid red;
+        margin: 10px 0;
+        margin-left: 28px;
+        float: left;
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">MY PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallary.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sec1">
+            <div class="arightsection">
+                <h4><b>Let's Connect</b><br></h4>
+                <br>
+                Thank you for visiting my portfolio. As a fresher passionate about front-end development, I'm eager to
+                connect
+                with you and explore opportunities to kickstart my career. Feel free to reach out to me through any of
+                the
+                following
+                channels:<br>
+                <br>
+                <h4><b>Seeking Opportunities</b><br></h4>
+                <br>
+                I am actively seeking work or internship opportunities in front-end development. If you have a role or
+                project that
+                aligns with my skills and enthusiasm, I would love to hear from you. Let's discuss how I can contribute
+                to
+                your team or
+                project.<br>
+                <br>
+                <h4><b>Questions or Advice</b><br></h4>
+                <br>
+                If you have any questions or advice to share with a fellow newcomer to the industry, please don't
+                hesitate
+                to reach out.
+                I'm open to learning and growing, and I greatly appreciate any guidance you can provide.<br>
+                <br>
+                <h4><b>Connect with Me on Social Media</b><br></h4>
+                <br>
+                Stay updated with my journey as a budding front-end developer by following me on social media. I'm
+                excited
+                to connect
+                with fellow professionals, mentors, and potential employers.:<br>
+                <br>
+            </div>
+
+
+            <div class="contact aleftsection">
+                <form style="border: 1px solid rgb(186, 5, 241);">
+                    Name:<input type="text" name="name" placeholder="Name"><br>
+                    Email:<input type="email" name="email" placeholder="Email"><br>
+                    LinkedIn:<input type="LinkedIn" name="LinkedIn" placeholder="LinkedIn"><br>
+                    Instagram:<input type="Instagram" name="Instagram" placeholder="Instagram"><br>
+                    GitHub:<input type="GitHub" name="GitHub" placeholder="GitHub"><br>
+                    Message:<input type="message" name="message" placeholder="Message" style="height:100px;"><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>rtk developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                    <li>services</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>services</li>
+            </div>
+            <div class="footer-fourth">
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>services</li>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyrights &#169; rtkportfolio.com | all rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'front end designer'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>
+
+<hr>
+<section class="secondsection">
+    <span class="text-gray">What i have done so far</span>
+    <h1>Work experience</h1>
+    <div class="box">
+
+        <div class="vertical">
+            <img class="image-top" src="rtk.jpg" alt="">
+            <div class="vertical-title">
+                HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                dolores! Animi, quisquam, eum perspiciatis iusto aspernatur dolorum
+                quae ut incidunt nemo voluptatibus ab? Quos provident dolor facilis in saepe soluta?
+            </div>
+        </div>
+        <div class="vertical">
+            <img class="image-top" src="rtk.jpg" alt="">
+            <div class="vertical-title">
+                HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                dolores! Animi, quisquam, eum perspiciatis iusto aspernatur dolorum
+                quae ut incidunt nemo voluptatibus ab? Quos provident dolor facilis in saepe soluta?
+            </div>
+        </div>
+        <div class="vertical">
+            <img class="image-top" src="rtk.jpg" alt="">
+            <div class="vertical-title">
+                HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                dolores! Animi, quisquam, eum perspiciatis iusto aspernatur dolorum
+                quae ut incidunt nemo voluptatibus ab? Quos provident dolor facilis in saepe soluta?
+            </div>
+        </div>
+        <div class="vertical">
+            <img class="image-top" src="rtk.jpg" alt="">
+            <div class="vertical-title">
+                HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                dolores! Animi, quisquam, eum perspiciatis iusto aspernatur dolorum
+                quae ut incidunt nemo voluptatibus ab? Quos provident dolor facilis in saepe soluta?
+            </div>
+        </div>
+        <div class="vertical">
+            <img class="image-top" src="rtk.jpg" alt="">
+            <div class="vertical-title">
+                HTML developer(2010-2012)
+            </div>
+            <div class="vertical-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                dolores! Animi, quisquam, eum perspiciatis iusto aspernatur dolorum
+                quae ut incidunt nemo voluptatibus ab? Quos provident dolor facilis in saepe soluta?
+            </div>
+        </div>
+    </div>
+</section>
+
+.footer>div {
+    width: 223px;
+
+}
