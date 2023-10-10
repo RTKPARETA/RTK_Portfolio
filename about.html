@@ -100,38 +100,41 @@
         background-color: black;
         margin-top: 70px;
     }
-
-    @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
         .sec1 {
-            flex-direction: column-reverse;
+            flex-direction:column;
+            width: auto;
+            height: auto;
         }
 
         .aleftsection {
-            width: 721px !important;
-            display: flex;
-            justify-content: center;
-        }
-        .name{
             width: auto !important;
-            display: none;
-            float: left;
-            flex-direction: column;
+            display: flex;
+            float: none;
             justify-content: center;
             align-items: center;
+            margin: auto;
+            height: auto;
+        }
+        .aleftsection .img{
+            align-items: center;
+            width: auto;
+            height: auto;
+        }
+        .name{
+           display: none;
         }
 
         .arightsection {
             width: auto !important;
             display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: normal;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: auto;
         }
-
-        .arightsection img {
-            width: 45vw;
-            margin-bottom: 73px;
-        }
+    
     }
 </style>
 
