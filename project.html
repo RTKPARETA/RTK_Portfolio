@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTK Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="portfolio.css" rel="stylesheet">
+
+</head>
+<style>
+    .secondsection {
+        max-height: 80vh;
+        margin: auto;
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    .secondsection h1 {
+        font-size: 1.9rem;
+    }
+
+    .secondsection .box {
+        background: white;
+        width: 2px;
+        height: 160vh;
+        margin: 0 56px;
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+
+    .secondsection .vertical {
+        height: 1px;
+        width: 93px;
+        background-color: white;
+        margin: 20vh 0;
+    }
+
+    .image-hor {
+        height: 23px;
+        position: relative;
+        left: -32px;
+        top: -9px;
+    }
+
+    .vertical-title {
+        position: relative;
+        margin-top: -130px;
+        margin-left: 100px;
+        width: 500px;
+        font-size: 1.3rem;
+    }
+
+    .vertical-desc {
+        position: relative;
+        margin-top: -10px;
+        margin-left: 100px;
+        color: gray;
+        width: 500px;
+        font-size: 0.7rem;
+    }
+
+    button {
+        border-radius: 15px/25px;
+        width: 100px;
+        margin-left: 30px;
+        margin-top: 5px;
+        height: 20px;
+        text-align: center;
+        background-color: rgb(18, 20, 114);
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgb(126, 99, 189);
+        font-size: 0.7rem;
+    }
+
+    button:hover {
+        width: 102px;
+        height: 20px;
+        border: 2px solid white;
+    }
+
+
+    @media (max-width:1200px) {
+        .box {
+            flex-direction: column;
+            margin-left: 0px;
+        }
+
+        .secondsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120vh;
+            margin-left: 0px;
+        }
+
+        .secondsection .vertical {
+            width: 93px;
+            height: 1px;
+            margin-left: 0px;
+        }
+
+        .vertical-title,
+        .vertical-desc {
+            left: 45px;
+
+        }
+
+        .secondsection .box {
+            height: 60vw;
+            margin-left: 0px;
+        }
+    }
+
+    @media (max-width:788px) {
+        .box {
+            flex-direction: column;
+            
+
+        }
+
+        .secondsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 15vh;
+            margin-left: 20px;
+
+        }
+
+        .secondsection .vertical {  
+            height: 1px;
+        }
+
+        .vertical-title,
+        .vertical-desc {
+            width:370px;
+
+        }
+
+        .secondsection .box {
+            height: 200vw;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">RTK PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="secondsection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>My Projects</h1>
+
+            <div class="box">
+                <ul>
+                    <li>
+                        <div class="vertical">
+                            <img class="image-hor" src="rtk2.jpg" alt="RTKNews">
+                            <div class="vertical-title">
+                                RTKNews
+                            </div>
+                            <div class="vertical-desc  pad">
+                                This is a news website project.<br>
+                                It is built using HTML,CSS,JAVA SCRIPT and most helpful thing API's. <br>
+                                Reference for API is : "<a target="_blank"
+                                    href="https://newsapi.org/">newsapi.org</a>".<br>
+                                With the use of API we can fetch data from other websites.
+                                <br>
+                                <a target="_blank" href="https://rtkpareta.github.io/RTKNews/"><button>VIEW PROJECT</button></a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="vertical">
+                            <img class="image-hor" src="rtk2.jpg" alt="BURGER">
+                            <div class="vertical-title">
+                                Burger webpage clone
+                            </div>
+                            <div class="vertical-desc">
+                                This is clone of a page of any Burger webpage template.<br>
+                                It is built using HTML and CSS.<br>
+                                Here is the link of the template. "<a target="_blank" href="project/wp.jpg">click to
+                                    view template</a>".<br>
+                                <a target="_blank" href="https://rtkpareta.github.io/Buger_webpage_clone/"><button>VIEW
+                                        PROJECT</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vertical">
+                            <img class="image-hor" src="rtk2.jpg" alt="RTK Portfolio">
+                            <div class="vertical-title">
+                                My portfolio
+                            </div>
+                            <div class="vertical-desc  pad">
+                                This is my own portfolio.<br>
+                                Here i described my introduction,details,qualification etc.<br>
+                                It is built using HTML,CSS,Javascript.<br>
+                                I took idea and it's homepage reference from codewithharry youtube channel.<br>
+                                <a target="_blank" href="https://rtkpareta.github.io/RTK_Portfolio/index.html"><button>VIEW PROJECT</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vertical">
+                            <img class="image-hor" src="rtk2.jpg" alt="Web template">
+                            <div class="vertical-title">
+                                Website design template
+                            </div>
+                            <div class="vertical-desc">
+                                This is clone of a page of a webpage template example.<br>
+                                It is built using HTML and CSS.<br>
+                                Here is the link of the template. "<a target="_blank" href="project/clone.png">click to
+                                    view template</a>".<br>
+                                <a target="_blank"
+                                    href="https://rtkpareta.github.io/website_template_clone/"><button>VIEW
+                                        PROJECT</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vertical">
+                            <img class="image-hor" src="rtk2.jpg" alt="99 design Webpage">
+                            <div class="vertical-title">
+                                99design webpage clone
+                            </div>
+                            <div class="vertical-desc">
+                                This is clone of a page of 99design webpage template.<br>
+                                It is built using HTML and CSS.<br>
+                                Here is the link of the template. "<a target="_blank" href="project/99design.png">click
+                                    to view template</a>".<br>
+                                <a target="_blank" href="https://rtkpareta.github.io/99_design_webpage/"><button>VIEW
+                                        PROJECT</button></a>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="vertical">
+                            <img class="image-hor" src="rtk2.jpg" alt="RTK Portfolio">
+                            <div class="vertical-title">
+                                Netflix-demo
+                            </div>
+                            <div class="vertical-desc  pad">
+                                This is demo project of netflix.<br>
+                                It is built using HTML,CSS,Javascript.<br>
+                                <a target="_blank" href="https://rtkpareta.github.io/netflix-demo/"><button>VIEW PROJECT</button></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <img src="rtk2.jpg" height="100%" width="100%">
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="ab"><a href="project.html">Projects</a></li>
+                    <li><a href="gallary.html">Gallery</a></li>
+                    <li class="ab"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h4><b>Connect with Me on Social Media</b><br></h4>
+                <hr>
+                <p style="font-size: 15px;"> Stay updated with my journey as a budding front-end developer by following
+                    me on social media.<br>
+                    I'm excited to connect with fellow professionals, mentors, and potential employers.:</p>
+                <hr>
+                <hr>
+                <P style="font-size: 15px;"> &#9742; 8003914455<br>
+                    &#9993; rtkpareta@gmail.com</P>
+                <br>
+                <div class="social">
+                    <ol style="margin-left:0px;">
+                        <li style="float:left; padding-left:0px;"><a
+                                href="https://www.instagram.com/rtk_pareta3003/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                                <img src="footer/insta1.webp" height="30px" width="30px"
+                                    style="border-radius:100%/100%;"></a></li>
+                        <li style="float:left;"><a href="https://www.linkedin.com/in/ritik-pareta-6347a924b"><img
+                                    src="footer/link.jpg" height="30px" width="30px"
+                                    style="border-radius:100%/100%; "></a></li>
+                        <li style="float:left;"><a href="https://github.com/RTKPARETA"><img src="footer/git1.png"
+                                    height="30px" width="30px" style="border-radius:100%/100%;"></a></li>
+                        <li style="float:left;"><a href="https://wa.me/qr/CDELPZ6IYNYKA1"><img src="footer/wa1.webp"
+                                    height="30px" width="30px" style="border-radius:100%/100%;"></a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyrights &#169; rtkportfolio.com | all rights reserved
+        </div>
+    </footer>
+    <script>
+        function showImage(imageSrc) {
+            let popupImage = document.getElementById("popupImage");
+            popupImage.src = imageSrc;
+
+            let imagePopup = document.getElementById("imagePopup");
+            imagePopup.style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeImage() {
+            let imagePopup = document.getElementById("imagePopup");
+            imagePopup.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    </script>
+</body>
+
+</html>
