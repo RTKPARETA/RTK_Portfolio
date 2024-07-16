@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTK Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="portfolio.css" rel="stylesheet">
+    <style>
+         .pfirstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 80px;
+        align-items: center;
+    }
+
+    section h1 {
+        font-size: 30px;
+        background: #121FCF;
+        background: linear-gradient(to right, #0e85e0 0%, #26ff1a 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .gallery {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .gallery-img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.1);
+        cursor: zoom-in;
+    }
+
+    .image-popup-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-size: 60px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .close-button:hover {
+        color: red;
+    }
+
+
+    #popupImage {
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">RTK PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 style="text-align: center;">Certificates</h1>
+            <div class="pfirstsection">
+
+                <div class="gallery">
+                    <img src="certificates/BECIL.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">Web
+                    Development
+                    <img src="certificates/AI.png" alt="Image 2" class="gallery-img" onclick="showImage(src)">Chatgpt&AI
+                    workshop
+                    <img src="certificates/python.png" alt="Image 2" class="gallery-img" onclick="showImage(src)">Python
+                    workshop
+                    <img src="certificates/marksheet(college).jpg" alt="Image 2" class="gallery-img"
+                        onclick="showImage(src)">College Marksheet(final sem)
+                    <img src="certificates/10TH.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">10TH
+                    Marksheet
+                    <img src="certificates/12TH.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">12TH
+                    Marksheet
+                    <img src="certificates/rscit.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">RSCIT
+                    <img src="certificates/sgfi(17-18).jpg" alt="Image 2" class="gallery-img"
+                        onclick="showImage(src)">SGFI(2017-18)
+                    <img src="certificates/sgfi(19-20).jpg" alt="Image 2" class="gallery-img"
+                        onclick="showImage(src)">SGFI(2019-20)
+                    <img src="certificates/vedic.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">VEDIC
+                    MATHEMATICS
+
+
+
+                    <div class="image-popup-container" id="imagePopup">
+                        <span class="close-button" onclick="closeImage()">×</span>
+                        <img src="" alt="Popup Image" id="popupImage">
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <img src="rtk2.jpg" height="100%" width="100%">
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="ab"><a href="project.html">Projects</a></li>
+                        <li><a href="gallary.html">Gallery</a></li>
+                        <li class="ab"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <h4><b>Connect with Me on Social Media</b><br></h4>
+                    <hr>
+                    <p style="font-size: 15px;"> Stay updated with my journey as a budding front-end developer by following
+                        me on social media.<br>
+                        I'm excited to connect with fellow professionals, mentors, and potential employers.:</p>
+                    <hr>
+                    <hr>
+                    <P style="font-size: 15px;"> &#9742; 8003914455<br>
+                        &#9993; rtkpareta@gmail.com</P>
+                    <br>
+                    <div class="social">
+                        <ol style="margin-left:0px;">
+                            <li style="float:left; padding-left:0px;"><a
+                                    href="https://www.instagram.com/rtk_pareta3003/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                                    <img src="footer/insta1.webp" height="30px" width="30px"
+                                        style="border-radius:100%/100%;"></a></li>
+                            <li style="float:left;"><a href="https://www.linkedin.com/in/ritik-pareta-6347a924b"><img
+                                        src="footer/link.jpg" height="30px" width="30px"
+                                        style="border-radius:100%/100%; "></a></li>
+                            <li style="float:left;"><a href="https://github.com/RTKPARETA"><img src="footer/git1.png"
+                                        height="30px" width="30px" style="border-radius:100%/100%;"></a></li>
+                            <li style="float:left;"><a href="https://wa.me/qr/CDELPZ6IYNYKA1"><img src="footer/wa1.webp"
+                                        height="30px" width="30px" style="border-radius:100%/100%;"></a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                copyrights &#169; rtkportfolio.com | all rights reserved
+            </div>
+        </footer>
+        <script>
+            function showImage(imageSrc) {
+                let popupImage = document.getElementById("popupImage");
+                popupImage.src = imageSrc;
+    
+                let imagePopup = document.getElementById("imagePopup");
+                imagePopup.style.display = "block";
+                document.body.style.overflow = "hidden";
+            }
+    
+            function closeImage() {
+                let imagePopup = document.getElementById("imagePopup");
+                imagePopup.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        </script>
+</body>
+</html>
